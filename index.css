@@ -1,0 +1,36 @@
+
+body {
+	margin: 0;
+}
+
+main {
+	position: relative;
+}
+
+.mover-area {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto;
+}
+
+textarea.top {
+	grid-column: 1 / -1;
+}
+
+.target {
+	display: inline-block;
+	background: #7f7;
+
+	width: 2em;
+	height: 2em;
+}
+
+main > .intersection-roots {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.intersection-roots > * {
+	background: #ff00003f;
+}
